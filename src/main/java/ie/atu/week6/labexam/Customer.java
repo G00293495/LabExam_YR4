@@ -4,6 +4,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.validation.constraints.*;
 import org.springframework.data.annotation.Id;
 
+
 public class Customer {
 
     @Id
@@ -20,7 +21,7 @@ public class Customer {
     private int phoneNumber;
 
     @Past()
-    private int dateofBirth;
+    private int dateOfBirth;
 
     @Email(message = "This should be a valid email format")
     private String email;
